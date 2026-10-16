@@ -22,7 +22,7 @@
 <main>
 <h1>Run-apalooza Privacy Policy</h1>
 <p>Effective October 15, 2026</p>
-<p>Run-apalooza keeps your runs and health data on your iPhone and Apple Watch. There's no account, and the app has no servers, analytics, ads, or tracking. Your running data only leaves your devices when you use the built-in coach and have allowed it to go to Anthropic, when you turn on Jev checks and allow it to go to TypeSafe, or when you share something yourself.</p>
+<p>Run-apalooza keeps your runs and health data on your iPhone and Apple Watch. There's no account, and the app has no servers, analytics, ads, or tracking. Your running data only leaves your devices when you use the built-in coach and have allowed it to go to Anthropic (the on-device coach keeps it on your iPhone), when you turn on Jev checks and allow it to go to TypeSafe, or when you share something yourself.</p>
 <h2>What the app uses</h2>
 <ul>
   <li><strong>Location</strong>, during runs only: to measure distance and pace, draw your route, and look up the weather where you ran.</li>
@@ -34,7 +34,7 @@
   <li><strong>Your TypeSafe API key</strong>, if you turn on Jev checks.</li>
 </ul>
 <h2>Where it's kept</h2>
-<p>On your iPhone, and on your Apple Watch during runs. Runs, plans, notes, and chats are stored in the app. Your Claude and TypeSafe API keys are stored in the iPhone's Keychain and only sent to Anthropic and TypeSafe, respectively. Nothing is stored in iCloud.</p>
+<p>On your iPhone, and on your Apple Watch during runs. Runs, plans, notes, and chats are stored in the app. Your Claude and TypeSafe API keys are stored in the iPhone's Keychain and only sent to Anthropic and TypeSafe, respectively. If you download the on-device coach, its model is kept on your iPhone too. Nothing is stored in iCloud.</p>
 <h2>What leaves your devices</h2>
 <p><strong>To Anthropic, only with your permission.</strong> The built-in coach runs on Claude, made by Anthropic. The app asks before sending anything. If you allow it, then when you check in, start a new conversation, write a plan with the coach, or summarize your history, it sends Anthropic:</p>
 <ul>
@@ -44,6 +44,7 @@
   <li>your coach profile, the coach's notes, your training plan, and your chat messages</li>
 </ul>
 <p>Your route and location aren't sent. Requests go over an encrypted connection with your own API key, and Anthropic handles them under its <a href="https://www.anthropic.com/legal/privacy">privacy policy</a>. You can turn sharing off at any time in Coach → Coach Settings → Share running data with Anthropic. The coach can't answer while it's off.</p>
+<p><strong>Nothing, with the on-device coach.</strong> If you pick the on-device coach instead, it runs Gemma, an AI model made by Google, on your iPhone. Your runs, notes, and chats go to it on your iPhone and aren't sent anywhere. The app downloads the model once from Hugging Face, when you ask it to. Like any download, that request includes your IP address, but none of your data; Hugging Face handles it under its <a href="https://huggingface.co/privacy">privacy policy</a>. Writing a plan with the coach and summarizing your history still use Claude.</p>
 <p><strong>To TypeSafe, only if you turn on Jev checks and allow it.</strong> Jev is a decision model made by TypeSafe AI. It's off unless you turn it on in Coach → Coach Settings, and the app asks before sending anything. It answers with a pick from a short list, and gets only what each check needs:</p>
 <ul>
   <li>plan check: this week's planned workouts, and the distance, time, pace, and average heart rate of the week's runs</li>
@@ -59,6 +60,7 @@
 <ul>
   <li><strong>Stop sharing with Anthropic:</strong> Coach → Coach Settings → Share running data with Anthropic. This stops anything else being sent. Your Anthropic account and Anthropic's privacy policy cover what it already received.</li>
   <li><strong>Stop sharing with TypeSafe:</strong> Coach → Coach Settings → Share running data with TypeSafe, or turn off Jev checks.</li>
+  <li><strong>Remove the on-device coach:</strong> Coach → Coach Settings → On iPhone → Remove Model.</li>
   <li><strong>Health access:</strong> Settings → Health → Data Access &amp; Devices → Run-apalooza.</li>
   <li><strong>Delete your data:</strong> delete runs in History, or chats in Coach → Profile &amp; Notes. Deleting the app removes everything it stored. Workouts it saved to Apple Health stay there until you delete them in the Health app.</li>
 </ul>
